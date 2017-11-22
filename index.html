@@ -24,14 +24,14 @@
 
     <div class="pagination">
       <div class="pag-option">
-        <button>releases</button>
+        <button ng-click="changePage('prototypes')">releases</button>
       </div>
       <div class="pag-option">
-        <button>news</button>
+        <button ng-click="changePage('news')">news</button>
       </div>
     </div>
 
-    <div class="prototypes">
+    <div class="prototypes" ng-if="page=='prototypes'">
       <div class="prototype" ng-repeat="prototype in prototypes">
         <div class="prototype-title">
           <div class="prototype-number"><strong>gravivity {{prototype.number}}</strong></div>
@@ -41,7 +41,6 @@
         <div class="prototype-description">
           <p>{{prototype.description}}</p>
         </div>
-
         <div class="versions-title"><strong>releases</strong></div>
         <div class="prototype-versions">
           <div class="protoypes-version" ng-repeat="version in prototype.versions">
@@ -65,6 +64,9 @@
       </div>
     </div>
 
+
+    <div class="news" ng-if="page=='news'">
+    </div>
   </div>
 
 </body>

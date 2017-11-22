@@ -1,6 +1,8 @@
 var gravivity = angular.module('gravivity', []);
 
 gravivity.controller('GravivityController', function GravivityController($scope) {
+  $scope.page = 'prototypes';
+
   $scope.prototypes = [
     {
       number: "0.1",
@@ -27,6 +29,10 @@ gravivity.controller('GravivityController', function GravivityController($scope)
     }
   ];
 
+  $scope.changePage = function(page) {
+    $scope.page = page;
+  }
+
   var months = ["Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dez"];
   $scope.getBrazilDate = function(date) {
     var s = '';
@@ -38,7 +44,6 @@ gravivity.controller('GravivityController', function GravivityController($scope)
 
   $scope.getUSADate = function(date) {
     var s = '';
-    console.log(date);
     s += months[date.getMonth()-1] + '. ';
     var day = date.getDate();
     s += day;

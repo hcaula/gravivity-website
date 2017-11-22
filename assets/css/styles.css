@@ -70,7 +70,7 @@ body {
   padding: 0px;
 }
 
-.prototype {
+.prototype, .news {
   color: #fcac5d;
   background-color: white;
   padding: 20px;
