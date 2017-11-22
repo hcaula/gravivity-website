@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 80vw;
 }
 
 .title {
@@ -44,6 +45,7 @@ body {
   color: #f49b42;
   flex-flow: row;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .pag-option {
@@ -62,4 +64,9 @@ body {
   border: none;
   color: #f49b42;
   font-size: 15px;
+  padding: 0px;
+}
+
+.prototype {
+  border-top: thin solid grey;
 }

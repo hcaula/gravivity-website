@@ -2,3 +2,15 @@
   font-family: comfortaa;
   src: url("../fonts/comfortaa/Comfortaa-Regular.ttf");
 }
+
+@font-face {
+  font-family: comfortaa;
+  src: url("../fonts/comfortaa/Comfortaa-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: comfortaa;
+  src: url("../fonts/comfortaa/Comfortaa-Light.ttf");
+  font-weight: lighter;
+}
