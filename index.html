@@ -26,7 +26,6 @@
       <div class="pag-option">
         <button>releases</button>
       </div>
-      <div class="pag-option division"></div>
       <div class="pag-option">
         <button>news</button>
       </div>
@@ -34,20 +33,31 @@
 
     <div class="prototypes">
       <div class="prototype" ng-repeat="prototype in prototypes">
-        <h3><strong>prototype #{{prototype.number}}</strong></h3>
-        <h5><strong>{{getUSADate(prototype.date)}}</strong></h5>
-        <div class="prototype-division">
+        <div class="prototype-title">
+          <div class="prototype-number"><strong>prototype #{{prototype.number}}</strong></div>
+          <div class="prototype-date">{{getUSADate(prototype.date)}}</div>
+        </div>
+
+        <div class="prototype-description">
           <p>{{prototype.description}}</p>
         </div>
 
-        <h4>versions</h4>
-        <div class="protoypes-versions" ng-repeat="version in prototype.versions">
-          <p>{{version.version}}</p>
+        <div class="prototype-latest">
+          <div class="latest-title"><strong>latest version</strong></div>
           <a href="{{version.iOS}}">iOS</a>
           <a href="{{version.android}}">android</a>
-          <ul ng-repeat="addition in version.additions">
-            <li>{{addition}}</li>
-          </ul>
+        </div>
+
+        <div class="versions-title"><strong>versions</strong></div>
+        <div class="prototype-versions">
+          <div class="protoypes-versions" ng-repeat="version in prototype.versions">
+            <p class="versions-version"><strong>{{version.version}}</strong></p>
+            <a href="{{version.iOS}}">iOS</a>
+            <a href="{{version.android}}">android</a>
+            <ul ng-repeat="addition in version.additions">
+              <li>{{addition}}</li>
+            </ul>
+          </div>
         </div>
 
 

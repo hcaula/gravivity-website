@@ -19,8 +19,7 @@ body {
 .body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 80vw;
+  max-width: 90vw;
 }
 
 .title {
@@ -28,6 +27,7 @@ body {
   font-size: 30px;
   color: #f49b42;
   text-align: center;
+  margin-top: 20px;
 }
 
 .title h1 {
@@ -36,7 +36,9 @@ body {
 
 .title-img {
   height: 20%;
+  min-height: 74px;
   width: 20%;
+  min-width: 74px;
 }
 
 .pagination {
@@ -51,11 +53,7 @@ body {
 .pag-option {
   text-align: center;
   width: 100px;
-}
-
-.division {
-  width: 1px;
-  background-color: #f49b42;
+  height: 100%;
 }
 
 .pag-option button {
@@ -68,5 +66,37 @@ body {
 }
 
 .prototype {
-  border-top: thin solid grey;
+  text-decoration: none;
+  border-top: thin solid #b4b7ba;
+  padding-top: 10px;
+}
+
+.prototype-description {
+  font-family: roboto-light;
+}
+
+.prototype-number {
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+
+.prototype-latest {
+  margin-bottom: 20px;
+}
+
+.latest-title, .versions-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.prototype-versions {
+  padding: 15px;
+  border: thin solid #b4b7ba;
+  border-radius: 20px;
+  font-family: roboto-light;
+  margin-bottom: 20px;
+}
+
+.versions-version {
+  font-size: 15px;
 }

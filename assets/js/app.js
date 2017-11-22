@@ -7,7 +7,169 @@ gravivity.controller('GravivityController', function GravivityController($scope)
       number: 1,
       date: new Date("11-29-2017"),
       description: "The first prototype is finally here! In those versions, we want to test certain design choices.",
+      latest: {
+        iOS: "www.google.com",
+        android: "www.youtube.com",
+        version: "0.1.0"
+      },
       versions: [
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        }
+      ]
+    },
+    {
+      number: 1,
+      date: new Date("11-29-2017"),
+      description: "The first prototype is finally here! In those versions, we want to test certain design choices.",
+      latest: {
+        iOS: "www.google.com",
+        android: "www.youtube.com",
+        version: "0.1.0"
+      },
+      versions: [
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        }
+      ]
+    },
+    {
+      number: 1,
+      date: new Date("11-29-2017"),
+      description: "The first prototype is finally here! In those versions, we want to test certain design choices.",
+      latest: {
+        iOS: "www.google.com",
+        android: "www.youtube.com",
+        version: "0.1.0"
+      },
+      versions: [
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        }
+      ]
+    },
+    {
+      number: 1,
+      date: new Date("11-29-2017"),
+      description: "The first prototype is finally here! In those versions, we want to test certain design choices.",
+      latest: {
+        iOS: "www.google.com",
+        android: "www.youtube.com",
+        version: "0.1.0"
+      },
+      versions: [
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
+        {
+          version: "0.1.0",
+          iOS: "www.google.com",
+          android: "www.youtube.com",
+          additions: [
+            "Adds main menu",
+            "Adds 15 levels",
+            "Adds new animations and sprites",
+            "Balances levels"
+          ]
+        },
         {
           version: "0.1.0",
           iOS: "www.google.com",
