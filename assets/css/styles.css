@@ -84,7 +84,7 @@ body {
 }
 
 .prototype-number {
-  font-size: 25px;
+  font-size: 27px;
   margin-bottom: 7px;
   padding-bottom: 10px;
   border-bottom: thin solid #d5d9e0;
@@ -94,9 +94,10 @@ body {
   margin-bottom: 20px;
 }
 
-.latest-title, .versions-title {
-  font-size: 18px;
+.versions-title {
+  font-size: 22px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .logos {
