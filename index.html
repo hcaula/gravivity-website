@@ -44,16 +44,20 @@
 
         <div class="prototype-latest">
           <div class="latest-title"><strong>latest version</strong></div>
-          <a href="{{version.iOS}}">iOS</a>
-          <a href="{{version.android}}">android</a>
+          <div class="logos">
+            <a href="{{prototype.latest.iOS}}"><img class="logo" src="assets/imgs/apple-logo-orange.png"></img></a>
+            <a href="{{prototype.latest.android}}"><img class="logo" src="assets/imgs/android-logo-orange.png"></img></a>
+          </div>
         </div>
 
         <div class="versions-title"><strong>versions</strong></div>
         <div class="prototype-versions">
           <div class="protoypes-versions" ng-repeat="version in prototype.versions">
             <p class="versions-version"><strong>{{version.version}}</strong></p>
-            <a href="{{version.iOS}}">iOS</a>
-            <a href="{{version.android}}">android</a>
+            <div class="logos">
+              <a href="{{version.iOS}}"><img class="logo" src="assets/imgs/apple-logo-orange.png"></img></a>
+              <a href="{{version.android}}"><img class="logo" src="assets/imgs/android-logo-orange.png"></img></a>
+            </div>
             <ul ng-repeat="addition in version.additions">
               <li>{{addition}}</li>
             </ul>
