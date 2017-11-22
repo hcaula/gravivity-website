@@ -5,7 +5,7 @@
   <title>gravivity</title>
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width">
-
+  <link rel="icon" href="assets/imgs/gravivity-icon.png">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
   <script src="assets/libraries/angular.min.js"></script>
@@ -18,7 +18,7 @@
 
     <div class="title">
 
-      <img class="title-img" src="assets/imgs/gravivity-icon.png"></img>
+      <img class="title-img" src="assets/imgs/player.png"></img>
       <h1>gravivity</h1>
     </div>
 
@@ -34,7 +34,7 @@
     <div class="prototypes">
       <div class="prototype" ng-repeat="prototype in prototypes">
         <div class="prototype-title">
-          <div class="prototype-number"><strong>prototype #{{prototype.number}}</strong></div>
+          <div class="prototype-number"><strong>gravivity {{prototype.number}}</strong></div>
           <div class="prototype-date">{{getUSADate(prototype.date)}}</div>
         </div>
 
@@ -42,29 +42,26 @@
           <p>{{prototype.description}}</p>
         </div>
 
-        <div class="prototype-latest">
-          <div class="latest-title"><strong>latest version</strong></div>
-          <div class="logos">
-            <a href="{{prototype.latest.iOS}}"><img class="logo" src="assets/imgs/apple-logo-orange.png"></img></a>
-            <a href="{{prototype.latest.android}}"><img class="logo" src="assets/imgs/android-logo-orange.png"></img></a>
-          </div>
-        </div>
-
-        <div class="versions-title"><strong>versions</strong></div>
+        <div class="versions-title"><strong>releases</strong></div>
         <div class="prototype-versions">
-          <div class="protoypes-versions" ng-repeat="version in prototype.versions">
-            <p class="versions-version"><strong>{{version.version}}</strong></p>
+          <div class="protoypes-version" ng-repeat="version in prototype.versions">
+            <div class="prototypes-version">
+              <p class="versions-version"><strong>v {{version.version}}</strong></p>
+            </div>
             <div class="logos">
-              <a href="{{version.iOS}}"><img class="logo" src="assets/imgs/apple-logo-orange.png"></img></a>
-              <a href="{{version.android}}"><img class="logo" src="assets/imgs/android-logo-orange.png"></img></a>
+              <a href="{{prototype.latest.iOS}}">
+                <img class="btn logo" src="assets/imgs/apple-logo-orange.png"></img>
+
+              </a>
+              <a href="{{prototype.latest.android}}">
+                <img class="btn logo" src="assets/imgs/android-logo-orange.png"></img>
+              </a>
             </div>
             <ul ng-repeat="addition in version.additions">
               <li>{{addition}}</li>
             </ul>
           </div>
         </div>
-
-
       </div>
     </div>
 

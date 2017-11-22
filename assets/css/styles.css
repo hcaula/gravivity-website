@@ -14,6 +14,11 @@ body {
   justify-content: center;
 
   font-family: comfortaa;
+
+  /*background-color: #f49b42;*/
+  background-color: #fcac5d;
+
+  color: white;
 }
 
 .body {
@@ -25,7 +30,7 @@ body {
 .title {
   display: inline-block;
   font-size: 30px;
-  color: #f49b42;
+  color: #ffffff;
   text-align: center;
   margin-top: 20px;
 }
@@ -44,7 +49,7 @@ body {
 .pagination {
   display: flex;
   justify-content: center;
-  color: #f49b42;
+  color: #ffffff;
   flex-flow: row;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -60,15 +65,18 @@ body {
   font-family: comfortaa;
   background-color: rgba(0,0,0,0);
   border: none;
-  color: #f49b42;
-  font-size: 15px;
+  color: #ffffff;
+  font-size: 18px;
   padding: 0px;
 }
 
 .prototype {
-  text-decoration: none;
-  border-top: thin solid #b4b7ba;
-  padding-top: 10px;
+  color: #fcac5d;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #d5d9e0;
+  margin-bottom: 10px;
 }
 
 .prototype-description {
@@ -78,6 +86,8 @@ body {
 .prototype-number {
   font-size: 25px;
   margin-bottom: 7px;
+  padding-bottom: 10px;
+  border-bottom: thin solid #d5d9e0;
 }
 
 .prototype-latest {
@@ -89,19 +99,25 @@ body {
   margin-bottom: 10px;
 }
 
-.prototype-versions {
-  padding: 15px;
-  border: thin solid #b4b7ba;
-  border-radius: 20px;
-  font-family: roboto-light;
-  margin-bottom: 20px;
-}
-
-.versions-version {
-  font-size: 15px;
+.logos {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .logo {
   height: 10%;
   width: 10%;
+  min-width: 40px;
+  min-height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logos a {
+  color: rgba(0,0,0,0);
+}
+
+.prototypes-version {
+  text-align: center;
+  font-size: 25px;
 }
