@@ -12,17 +12,18 @@ body {
 
   display: flex;
   justify-content: center;
+
+  font-family: comfortaa;
 }
 
 .body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .title {
-  font-family: comfortaa;
+  display: inline-block;
   font-size: 30px;
   color: #f49b42;
   text-align: center;
@@ -35,4 +36,30 @@ body {
 .title-img {
   height: 20%;
   width: 20%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  color: #f49b42;
+  flex-flow: row;
+  margin-top: 20px;
+}
+
+.pag-option {
+  text-align: center;
+  width: 100px;
+}
+
+.division {
+  width: 1px;
+  background-color: #f49b42;
+}
+
+.pag-option button {
+  font-family: comfortaa;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: #f49b42;
+  font-size: 15px;
 }
